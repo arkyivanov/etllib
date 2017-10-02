@@ -1,4 +1,5 @@
-ETL lib
+ETL lib (forked from https://github.com/chrismattmann/etllib.git)
+Disabled SSL verification posting JSON-files
 ====
 
 This is the ETL lib package.  It provides an API
@@ -40,7 +41,11 @@ After brew finished installing, the test for the libmagic man page should pass.
 Run the following commands to install ETLLib.
 
 ```
-git clone https://github.com/chrismattmann/etllib.git
+# For original version
+#git clone https://github.com/chrismattmann/etllib.git
+#- OR -
+# for current version 
+https://github.com/arkyivanov/etllib.git
 cd etllib
 python setup.py install
 ```
