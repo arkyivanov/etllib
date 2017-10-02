@@ -23,16 +23,16 @@
 # for loading into Solr using Tika and other goodies (JSON parsing, etc.)
 
 import urllib2
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
-urllib2.build_opener(urllib2.HTTPHandler(debuglevel=1,context=ctx)
 import json
 import os
 import operator
 import ast
 import sys
 import re
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+urllib2.build_opener(urllib2.HTTPHandler(debuglevel=1,context=ctx)
 
 try:
     import tika
